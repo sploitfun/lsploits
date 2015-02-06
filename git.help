@@ -1,0 +1,40 @@
+Step 1:
+- Create a repo at https://github.com/sploitfun/ with name 'lsploits'
+
+Step 2:
+- Directory name should match with git repository name.
+
+	$mkdir lsploits
+	$ cd lsploits/
+
+Step 3:
+- Init git repository
+
+	~/lsploits$ git init 
+	Initialized empty Git repository in /home/sploitfun/lsploits/.git/
+
+Step 4:
+- Link this local git repo with github repo. 
+
+	~/lsploits$ git remote add origin https://github.com/sploitfun/lsploits.git
+
+Step 5: 
+- Add your files
+
+	~/lsploits$ touch git.help
+
+Step 6:
+- Add local changes
+
+	~/lsploits$ git add .
+	where '.' - Adds all the local changes.
+
+Step 7:
+- Commit the changes
+
+	~/lsploits$ git commit -m "First Commit"
+
+Step 8:
+- Send the changes to github repo
+
+	~/lsploits$ git push origin master
