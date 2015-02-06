@@ -18,23 +18,28 @@ Step 4:
 
 	~/lsploits$ git remote add origin https://github.com/sploitfun/lsploits.git
 
-Step 5: 
+Step 5:
+- Add username and email address.
+
+	~/lsploits$ git config --global user.name "sploitfun"
+	~/lsploits$ git config --global user.email sploitfun@gmail.com
+Step 6: 
 - Add your files
 
 	~/lsploits$ touch git.help
 
-Step 6:
+Step 7:
 - Add local changes
 
 	~/lsploits$ git add .
 	where '.' - Adds all the local changes.
 
-Step 7:
+Step 8:
 - Commit the changes
 
-	~/lsploits$ git commit -m "First Commit"
+	~/lsploits$ git commit -m 'First Commit'
 
-Step 8:
+Step 9:
 - Send the changes to github repo
 
 	~/lsploits$ git push origin master
