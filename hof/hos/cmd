@@ -1,0 +1,6 @@
+#Compile commands
+gcc -g -fno-stack-protector -z norelro -z execstack -o vuln vuln.c -Wl,--rpath=/home/sploitfun/glibc/glibc-inst2.20/lib -Wl,--dynamic-linker=/home/sploitfun/glibc/glibc-inst2.20/lib/ld-linux.so.2
+gcc -g -o exp exp.c
+
+#Run commands
+./exp
