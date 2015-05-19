@@ -1,4 +1,5 @@
 // vuln.c
+// gcc -o vuln vuln.c -fno-stack-protector
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,6 +16,5 @@ int main (int argc, char **argv)
  }
  strcpy (buf, argv[1]);
  printf ("%s\nLen:%d\n", buf, (int)strlen(buf));
- fflush(stdout);
  return (0);
 }
