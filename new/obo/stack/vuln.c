@@ -1,5 +1,5 @@
 //#echo 0 > /proc/sys/kernel/randomize_va_space
-//$gcc -o vuln vuln.c -fno-stack-protector -mpreferred-stack-boundary=2
+//$gcc -z execstack -fno-stack-protector -mpreferred-stack-boundary=2 -o vuln vuln.c
 #include <stdio.h>
 #include <string.h>
 
